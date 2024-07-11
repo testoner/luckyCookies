@@ -1,0 +1,104 @@
+.cookie-wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: pink;
+    overflow: hidden;
+    z-index: 998;
+}
+
+.cookie-container{
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cookie{
+    max-width: 160px;
+}
+
+.cookie img{
+    max-width: 90%;
+}
+
+.cookie img:hover{
+    cursor: pointer;
+    transform: scale(110%);
+}
+
+.open-cookie-wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.27);
+    overflow: hidden;
+    z-index: 999;
+}
+
+.open-cookie{
+    position: relative;
+    max-height: 95vh;
+    max-width: 400px;
+    background-color: white;
+    animation: fadeIn 0.1s ease-in-out;;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.open-cookie img{
+    width: 100%;
+}
+
+.open-cookie p{
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-close{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top:5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.btn-close .first-line,
+.btn-close .second-line{
+    position: absolute;
+    top: 15px;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    border-radius: 40px;
+}
+
+.btn-close .first-line{
+    transform: rotate(45deg);
+}
+
+.btn-close .second-line{
+    transform: rotate(-45deg);
+
+}
